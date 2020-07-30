@@ -101,70 +101,84 @@
   <!-- End Navbar -->
   <!-- Begin Header Video -->
   <br /><br /><br /><br />
-  <div class="video-background-holder" style="margin-top: 30px; padding-top: 150px; padding-bottom: 150px;" id="home">
-    <div class="video-background-overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="./assets/video/wyohack_landing.mp4" type="video/mp4">
-    </video>
-    <div class="video-background-content container h-100">
-      <div class="">
-        <div class="text-middle text-center text-light">
-          <br /><br />
-          <h2 style="color: #5B6066; padding-left: auto; padding-right: auto">Headquartered in Laramie, Wyoming</h2>
-          <br />
-		  <h3 style="color: #5B6066; padding-left: 50px; padding-right: 50px">Commercializing Innovation</h3>
-          <br>
-		  <button id="eventbrite-widget-modal-trigger-94259908925" type="button" class="btn btn-danger">Learn More</button>
-          <br />&nbsp;<br />
-        </div>
+   <div class="page-header" style="background-image: url('./assets/img/Background/uw.png')">
+    <div class="filter"></div>
+    <div class="content-center">
+      <div class="motto">
+        <h2 class=" text-center">PARTNERS</h2>
       </div>
     </div>
   </div>
+  
   <div class="main features-4">
-    <div class="row">
+	<div class="row">
       <div class="col-md-8 ml-auto mr-auto text-center">
-        <h2 class="title">We drive economic development & opportunity with sustainable technology commercialization.</h2>
-        <h5 class="description">LODE is a venture studio manufacturing emerging technology startups and commercializing foundational and next-generation technology solutions for various enterprise verticals in the areas of blockchain, AI, IoT, Data & Analytics, and Quantum computing. We are boldly headquartered in Laramie, WY in a Qualified Opportunity Zone. </h5>
+        <h2 class="title">Our partners are extremely important and help us accomplish our goals.</h2>
       </div>
     </div>
     <div class="section">
-    <div class="container">
-      <div class="row my-5" >
-        <div class="col-sm-6 my-auto">
-          <img class="img" src="./assets/img/Main/hiking.jpg" style="width: 100%; height: auto;">
-        </div>
-        <div class="col-sm-6 text-center my-auto">
-              <h3 class="card-title">
-                Our Organization
-              </h3>
-              <h4 class="card-title">
-                Find out about our mission, methods, and the economic impact we intend to materialize in the coming decade.
-              </h4>
-              <div class="text-center">
-                <a href="./lawcon.html" class="btn btn-warning">Learn More</a>
-              </div>
-            </div>
-          </div>
-	  <div class="row flex-column-reverse flex-sm-row my-5" >
-	    <div class="col-sm-6 text-center my-auto">
-              <h3 class="card-title">
-                Why Wyoming?
-              </h3>
-              <h4 class="card-title">
-                Ready to join us in building the next great ecosystem? Let us help connect you to resources that could help. 
-              </h4>
-              <div class="text-center">
-                <a href="./lawcon.html" class="btn btn-warning">Read the Guide</a>
-              </div>
-            </div>
-        <div class="col-sm-6 my-auto">
-          <img class="img" src="./assets/img/Main/Blockchain.png" style="width: 100%; height: auto;">
-        </div>
+        
+			<h3 class="text-center"> Partners</h3>
+
+		<div class="row text-center">
+          <!-- <div class="col-sm-4"> -->
+            <!-- <div class="card card-profile card-plain"> -->
+              <!-- <div class="card-img-top"> -->
+                  <!-- <img class="img img-square-portrait" src="./assets/img/logo/ProdX.png" /> -->
+              <!-- </div> -->
+              <!-- <div class="card-body"> -->
+                <!-- <h4 class="card-title">Prod X</h4> -->
+                <!-- <div class="card-footer"> -->
+                  <!-- <!-- <a href="https://twitter.com/timdraper" target="_blank" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a> --> 
+                  <!-- <!-- <a href="https://www.linkedin.com/in/timothydraper/" target="_blank" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a> -->
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
 
           </div>
+		  <h3 class="text-center" >Become a Partner</h3>
+		  <div class="row">
+		  <div class="col-sm-2"></div>
+		  <div class="card-form col-sm-8" id="card">
+            <div class="card-body text-center">
+              <div class="card-description mt-5" >
+					<form class="form-input" id="frm1">
+					  <input type="hidden" id="file" name="file">
+					  <div class="form-row">
+						<div class="form-group col-md-6">
+						   <input type="text" class="form-control" id="Firstname" name="First" placeholder="First Name" maxlength="30">
+						</div>
+						<div class="form-group col-md-6">
+						 <input type="text" class="form-control" id="Lastname" name="Last" placeholder="Last Name" maxlength="30">
+						</div>
+					  </div>
+					  <div class="form-row">
+						<div class="form-group col-md-6">
+						   <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" maxlength="60">
+						</div>
+						<div class="form-group col-md-6">
+						 <input type="tel" class="form-control" id="Phone" name="Phone" placeholder="Phone Number" maxlength="30">
+						</div>
+					  </div>
+					 
+					  <div class="form-group">
+
+							<!-- <div class="form-group mb-n1" style="font-size:14px;">Explain why you should speak on this topic</div> -->
+							<textarea class="field-element mt-1" name="Message" id="Message" rows="4" style="border-color: black; width: 100%; height: 100%; box-sizing: border-box;" placeholder="Message" maxlength="600"></textarea>
+					  </div>
+
+					</form>
+              </div>
+              <div class="footer">
+                <a href="#" onclick="SubmitForm()" class="btn btn-danger">Send</a>
+              </div>
+            </div>
+          </div>
+          </div>
+		</div>
         </div>
-	 </div>
-  </div>
+
 
     <footer class="footer footer-big" style="background-color: #cfd2d6">
     
