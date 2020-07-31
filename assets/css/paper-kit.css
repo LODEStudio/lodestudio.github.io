@@ -3225,7 +3225,7 @@ h3 .small {
 }
 
 .description {
-  color: #9A9A9A;
+  color: #000000;
 }
 
 blockquote small {
@@ -7139,7 +7139,7 @@ textarea.form-control {
 .navbar[class*="bg-"] .navbar-toggler .navbar-toggler-bar,
 .navbar.navbar-transparent .navbar-toggler .navbar-toggler-bar {
   /* background: #ffffff; */
-  background: #000; 
+  background: #000;
 }
 
 .navbar-toggler .navbar-toggler-bar {
