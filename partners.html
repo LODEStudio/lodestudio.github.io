@@ -144,6 +144,9 @@
 		  <div class="col-sm-2"></div>
 		  <div class="card-form col-sm-8" id="card">
             <div class="card-body text-center">
+			<span data-qa="block-title deep-purple-block-title" class="form-text">
+				We partner with select technology transfer offices and corporate enterprise innovation offices for commercialization as well as syndicate venture funds for follow on capital. To discuss possible partnership proposals please complete the form below.
+			</span>
               <div class="card-description mt-5" >
 					<form class="form-input" id="frm1">
 					  <input type="hidden" id="file" name="file">
@@ -247,6 +250,16 @@
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!--  Plugin for presentation page - isometric cards  -->
   <script src="./assets/js/plugins/presentation-page/main.js"></script>
+  <script>	
+	form_settings = {
+	"Location": "Partner Signup",
+	"Test": false,
+	"TextFormID": "frm1",
+	"Redirect": "https://lodestudio.com/",
+	"Required_List": ["Firstname", "Lastname",  "Email", "Phone"]
+	};
+</script>
+  <script src="./assets/js/form.js" type="text/javascript"></script>
 </body>
 
 </html>
