@@ -11,6 +11,9 @@
 //			"Redirect": redirect link after submission
 //			"DZMessage": the Dropzone message given to be put in as default
 //          "Required_List": the fields that are required first element in the multiselect sublist[[]] is for the text to be colored
+//			"Success Message": the success message displayed
+//			"TextFormID": the ID used by the middleware
+//			"root_url": the root of the site for loading assets
 //		}
 //----------------------------------------------------/
 var Form_ID = form_settings["TextFormID"];
@@ -117,7 +120,13 @@ function ShowLoading() {
 		var outerdiv = document.createElement('div');
         var div = document.createElement('div');
         var img = document.createElement('img');
-        img.src = './assets/img/loading.gif';
+		if( form_settings["root_url"]){
+			img.src = form_settings["root_url"]+'/assets/img/loading.gif';
+		}
+		else{
+			img.src = './assets/img/loading.gif';
+		}
+        
         div.innerHTML = "Loading...<br />";
         div.style.cssText = 'position: fixed; top: 40%; display: block; left: 38%; right: auto; z-index: 5000; border-radius: 15px; width: 24%; height: 100px; text-align: center; background: #eeeeee; border: 1px solid #000';
         div.appendChild(img);
